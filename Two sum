@@ -7,10 +7,9 @@ return [0, 1].
 Python:
 class solution(object)
   def twoSum(self,nums,target):
-		self.nums = nums
-		self.target = target
-		for indic, i in enumerate(self.nums):
-			for indic_b in range(indic + 1, len(nums)):
-				if (i + nums[indic_b] == self.target):
-					print([indic, indic_b])
-					return ([indic, indic_b])
+	self.nums = nums
+	self.target = target
+	for indic, i in enumerate(self.nums):
+		for indic_b in range(indic + 1, len(nums)):
+			if (i + nums[indic_b] == self.target):
+				return ([indic, indic_b])
